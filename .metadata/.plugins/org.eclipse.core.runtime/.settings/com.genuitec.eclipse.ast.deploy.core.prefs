@@ -1,0 +1,14 @@
+#Mon Aug 29 18:10:19 CST 2016
+tomcat6Server.javaee.contextRoot=/javaee
+tomcat6Server.javaee.altContextRoot=/javaee
+tomcat6Server.javaee.isDeployed=true
+tomcat6Server.javaee.noFileCopy=false
+tomcat6Server.javaee.deployIsOverProject=false
+tomcat6Server.javaee.isUptoDate=true
+tomcat6Server.javaee.shouldOverwrite=false
+tomcat6Server.javaee.type=WebDeployment
+tomcat6Server.javaee.isExploded=true
+eclipse.preferences.version=1
+tomcat6Server.javaee.shouldBackup=false
+tomcat6Server.javaee.IEARProjectName=
+tomcat6Server.javaee.deploymentPath=F\:\\tomcat6\\apache-tomcat-6.0.45\\webapps\\javaee

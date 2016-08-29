@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>ServletDemo1</servlet-name>
+    <servlet-class>com.ys.a.ServletDemo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo1</servlet-name>
+    <url-pattern>/servlet/ServletDemo1</url-pattern>
+  </servlet-mapping>
+  
+  
+  <filter>
+  	<filter-name>FilterDemo1</filter-name>
+  	<filter-class>com.ys.a.FilterDemo1</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>FilterDemo1</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>NOCacheFilter</filter-name>
+  	<filter-class>com.ys.a.NOCacheFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>NOCacheFilter</filter-name>
+  	<url-pattern>*.jsp</url-pattern> 	
+ </filter-mapping>
+  <filter-mapping>
+  	<filter-name>NOCacheFilter</filter-name>
+  	<url-pattern>/servlet/*</url-pattern> 	
+ </filter-mapping>
+ 
+ <filter>
+ 	<filter-name>NeedCacheFilter</filter-name>
+ 	<filter-class>com.ys.a.NeedCacheFilter</filter-class>
+ 	<init-param>
+ 		<param-name>html</param-name>
+ 		<param-value>60</param-value>
+ 	</init-param>
+ 	<init-param>
+ 		<param-name>js</param-name>
+ 		<param-value>70</param-value>
+ 	</init-param>
+ 	<init-param>
+ 		<param-name>css</param-name>
+ 		<param-value>40</param-value>
+ 	</init-param>
+ </filter>
+ <filter-mapping>
+ 	<filter-name>NeedCacheFilter</filter-name>
+ 	<url-pattern>*.html</url-pattern>
+ </filter-mapping>
+  <filter-mapping>
+ 	<filter-name>NeedCacheFilter</filter-name>
+ 	<url-pattern>*.css</url-pattern>
+ </filter-mapping>
+  <filter-mapping>
+ 	<filter-name>NeedCacheFilter</filter-name>
+ 	<url-pattern>*.js</url-pattern>
+ </filter-mapping>
+</web-app>

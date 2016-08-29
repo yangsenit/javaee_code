@@ -1,0 +1,9 @@
+INDEX VERSION 1.126
+F:\javaee_code\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3348615830.index
+\day0829\src
+F:\javaee_code\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\580222054.index
+\javaee\src
+F:\javaee_code\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3505178325.index
+\day0828\src
+F:\javaee_code\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3121915474.index
+\JavaEE\src\main\java
